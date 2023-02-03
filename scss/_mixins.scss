@@ -1,0 +1,31 @@
+
+$paleta: (
+    'uno':#43ca8bcb,
+    'dos':#07db4a8f,
+    'tres':rgba(250, 250, 250, 0.432),
+    'cuatro':rgb(180, 223, 189),
+    'cinco':rgb(248, 249, 250),
+     
+
+);
+
+.bg-green{
+    background-color:map-get($map: $paleta, $key:'dos' );
+}
+   
+
+.bg-sesion{
+    background-color: map-get($map: $paleta, $key: "tres");
+}
+
+.anunciobox_white{ 
+    background-color: map-get($map:$paleta , $key:'cinco');
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem; 
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 5px 5px;   
+  }

@@ -1,0 +1,30 @@
+
+#botonera{
+    background-color: $styleColor;
+    font-family: $styleFont;
+    ul{
+        li{
+            a{ 
+                font-size: 1rem;
+                color: rgb(10, 10, 10);
+                /* Animacion subrayado */
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+                &:hover{
+                    color: rgb(241, 237, 234);
+                    font-weight: 600;
+
+                    background-size: 100% 2px;
+                }
+                img{
+                width: 30px;
+                }
+
+            }
+           
+        }
+    }
+}
